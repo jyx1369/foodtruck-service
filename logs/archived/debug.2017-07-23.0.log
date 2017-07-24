@@ -1,9 +1,0 @@
-2017-07-23 22:11:41 - Starting Application v0.1.0 on Yuxis-MacBook-Pro.local with PID 72102 (/Users/yuxij/Documents/jyx1369_cd/pp/foodtrucks/target/foodtruck-nearby-service-0.1.0.jar started by yuxij in /Users/yuxij/Documents/jyx1369_cd/pp/foodtrucks)
-2017-07-23 22:11:41 - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
-2017-07-23 22:11:41 - No active profile set, falling back to default profiles: default
-2017-07-23 22:11:47 - Started Application in 5.824 seconds (JVM running for 6.407)
-2017-07-23 22:12:14 - controller advice:model Attribute
-2017-07-23 22:12:25 - controller advice:model Attribute
-2017-07-23 22:12:25 - controller advice: init binder
-2017-07-23 22:12:25 - controller advice: init binder
-2017-07-23 22:12:25 - Found 122 foodtrucks within 1.0 miles from location { latitude: 37.7749295, longitude: -122.41941550000001}
