@@ -18,7 +18,7 @@ import javax.persistence.*;
                 )
         }
 )
-@Entity
+@Entity // This tells Hibernate to make a table out of this class
 @Table(name = "foodtruck")
 public class FoodTruck {
     @Id

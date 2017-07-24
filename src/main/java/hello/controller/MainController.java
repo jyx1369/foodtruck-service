@@ -39,7 +39,7 @@ public class MainController {
         double startLongitude = longitude - longitudeDiff;
         double endLongitude = longitude + longitudeDiff;
 
-        //Query query = em.createNativeQuery("SELECT json, ( 3959 * acos( cos( radians(?1) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(?2) ) + sin( radians(?1) ) * sin( radians( latitude ) ) ) ) AS distance FROM foodtruck HAVING distance < 11 ORDER BY distance", "FoodTruckDetail");
+        // doing a subquery to make the mysql index work, otherwise the column calculation won't make index work.
         Query query = em.createNativeQuery("SELECT json, (3959 * acos( cos( radians(?1) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(?2) ) + sin( radians(?1) ) * sin( radians( latitude ) ) ) ) AS distance FROM foodtruck WHERE locationId in (SELECT locationId FROM foodtruck WHERE latitude >=?3 and latitude <=?4 and longitude >=?5 and longitude <=?6) HAVING distance < ?7 ORDER BY distance", "FoodTruckDetailWithDistance");
         query.setParameter(1, latitude);
         query.setParameter(2, longitude);
