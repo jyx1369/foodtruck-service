@@ -32,8 +32,10 @@
    **Logging and error handling**:
    Littered code with logs using slf4j
    Registered exception handler using ControllerAdvice to trap and log exceptions.
+   
 
-4.Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project.
+ 4.Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project.
+ 
     -Enable query cache for mysql
     -Add aws cloudwatch for monitoring.
     -Add support to client to get current location using browser APIs with user permission
@@ -42,9 +44,11 @@
     -Make the service more secure, etc. prevent DDoS.
 
 5.Link to your resume or public profile.
+
     https://www.linkedin.com/in/yuxijin/
 
 6.Link to to the hosted application where applicable.
+
     http://ec2-54-67-17-10.us-west-1.compute.amazonaws.com:8080/
 
 7.Steps to run the application:
