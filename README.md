@@ -11,23 +11,25 @@
     Define "nearby" - 1 mile in my app.
 
 2. Whether the solution focuses on back-end, front-end or if it's full stack.
+
    Full stack
 
 3. Reasoning behind your technical choices, including architectural.
+
    Architecture:
 
-   Backend:
+   **Backend**:
    -Spring boot (a spring application for rest api services). It's a Spring based production-ready framework which
    includes embeded tomcat server, which is convenient to use.
    -MySql: Used indexes on latitude and longitude columns to make searches faster. Easy to scale by sharding, load
    balancing etc.
 
-   Frontend:
+   **Frontend**:
    jQuery and bootstrap (lightweight, and make it much easier to use JavaScript)
    Food trucks will shown as a list after hitting the "Go" button; They will shown in the map as well, clicking markers
    will display food truck details.
 
-   Logging and error handling:
+   **Logging and error handling**:
    Littered code with logs using slf4j
    Registered exception handler using ControllerAdvice to trap and log exceptions.
 
