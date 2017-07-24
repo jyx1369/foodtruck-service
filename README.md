@@ -12,11 +12,12 @@
 
 2. Whether the solution focuses on back-end, front-end or if it's full stack.
 
-   Full stack
+    Full stack
 
 3. Reasoning behind your technical choices, including architectural.
 
-   Architecture:
+
+    Architecture:
 
    **Backend**:
    -Spring boot (a spring application for rest api services). It's a Spring based production-ready framework which
@@ -52,6 +53,7 @@
     http://ec2-54-67-17-10.us-west-1.compute.amazonaws.com:8080/
 
 7.Steps to run the application:
+
     1)use mvn to build the jar
     mvn clean package -DskipTests
     2)load data into db:
