@@ -53,9 +53,9 @@
 
 7. Steps to run the application:
 
-    1)use mvn to build the jar
-    mvn clean package -DskipTests
-    2)load data into db:
-    java -cp target/foodtruck-nearby-service-0.1.0.jar -Dloader.main=hello.dataloader.CsvUtil org.springframework.boot.loader.PropertiesLauncher
-    3)run the application:
-    java -jar target/foodtruck-nearby-service-0.1.0.jar
+   1)use mvn to build the jar: <br />
+     mvn clean package -DskipTests <br />
+   2)load data into db: <br />
+     java -cp target/foodtruck-nearby-service-0.1.0.jar -Dloader.main=hello.dataloader.CsvUtil <br />
+   3)run the application: <br />
+     java -jar target/foodtruck-nearby-service-0.1.0.jar
