@@ -1,14 +1,13 @@
 1.Description of the problem and solution.
 
-
-   Problem:
+   * Problem:
    Create a service that tells the user what types of food trucks might be found near a specific location on a map.
    (food truck lists are sorted by distance)
 
-   Data used:
+   * Data used:
    "DataSF: Food Trucks"
 
-   Solution:
+   * Solution:
    Define "nearby" - 1 mile in my app.
 
 2. Whether the solution focuses on back-end, front-end or if it's full stack.
