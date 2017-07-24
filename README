@@ -8,7 +8,7 @@
     "DataSF: Food Trucks"
 
     Solution:
-    Define "nearby" - 1 mile in my app
+    Define "nearby" - 1 mile in my app.
 
 2. Whether the solution focuses on back-end, front-end or if it's full stack.
    Full stack
@@ -24,6 +24,8 @@
 
    Frontend:
    jQuery and bootstrap (lightweight, and make it much easier to use JavaScript)
+   Food trucks will shown as a list after hitting the "Go" button; They will shown in the map as well, clicking markers
+   will display food truck details.
 
    Logging and error handling:
    Littered code with logs using slf4j
