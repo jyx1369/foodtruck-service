@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foodtrucks near me</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Yuxi</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="min-height: 500px">
+
+    <div class="starter-template">
+        <h1>Food Trucks Near Me</h1>
+
+        <div id="feedback"></div>
+
+        <form class="form-horizontal" id="location-search-form">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Location</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="location"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" id="bth-location-search"
+                            class="btn btn-primary btn-lg">Go
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="map" style="width:100%;height:400px;"></div>
+    <!-- the result of the search will be rendered inside this div -->
+    <div id="result"></div>
+
+</div>
+
+<div class="container">
+    <footer>
+        <p>
+            <a class="navbar-brand" href="#">Yuxi 2017</a>
+        </p>
+    </footer>
+</div>
+
+<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCD4gYQsq5blqYD-jnSARus0C9hZN2ydw8&amp;sensor=false&amp;libraries=places&amp;language=en-AU"></script>
+<script>
+            var autocomplete = new google.maps.places.Autocomplete($("#location")[0], {});
+
+            google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                var place = autocomplete.getPlace();
+                console.log(place.address_components);
+            });
+        </script>
+</body>
+</html>
